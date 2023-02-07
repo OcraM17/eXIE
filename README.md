@@ -35,5 +35,26 @@ Download the [Five-K](https://data.csail.mit.edu/graphics/fivek/) datasets.
 Once the dataset has been downloaded, split the data in training (4000)
 and test(1000) using the files train1+2-list.txt and test-list.txt
 
-## Training
+## Reproducing the Experiments
 Train one of your favorite image enhancement methods
+
+## Results
+
+### Quantitative Results
+<p float="left">
+  <img src="imgs/frst.png" height=400 width="auto"/>
+  <img src="imgs/scnd.png" height=400 width="auto"/>
+</p>
+
+### Qualitative Results
+
+## Reference
+If you are considering using our code, or you want to cite our paper please use:
+```
+@article{cotogni2022explaining,
+  title={Explaining Image Enhancement Black-Box Methods through a Path Planning Based Algorithm},
+  author={Cotogni, Marco and Cusano, Claudio},
+  journal={arXiv preprint arXiv:2207.07092},
+  year= {2022}
+}
+```

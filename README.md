@@ -48,8 +48,8 @@ Train one of your favorite image enhancement methods
 
 ### Qualitative Results
 <p float="left">
-  <img src="imgs/comp.png" height=470 width="auto"/>
-  <img src="imgs/seq.png" height=470 width="auto"/>
+  <img src="imgs/comp.png" height=450 width="auto"/>
+  <img src="imgs/seq.png" height=450 width="auto"/>
 </p>
 
 ## Reference

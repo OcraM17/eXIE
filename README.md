@@ -47,6 +47,10 @@ Train one of your favorite image enhancement methods
 </p>
 
 ### Qualitative Results
+<p float="left">
+  <img src="imgs/comp.png" height=500 width="auto"/>
+  <img src="imgs/seq.png" height=500 width="auto"/>
+</p>
 
 ## Reference
 If you are considering using our code, or you want to cite our paper please use:

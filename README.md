@@ -36,7 +36,7 @@ Once the dataset has been downloaded, split the data in training (4000)
 and test(1000) using the files train1+2-list.txt and test-list.txt
 
 ## Reproducing the Experiments
-Train one of your favorite image enhancement methods
+Code will be released soon..
 
 ## Results
 

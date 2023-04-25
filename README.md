@@ -7,6 +7,8 @@ Official Repo of the paper "Explaining Image Enhancement Black-Box Methods throu
 
 [![arxiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2207.07092.pdf)
 
+**ACCEPTED** in Multimedia Tools and Applications
+
 eXIE is an algorithm for explaining the results of state-of-the-art image-to-image
 translation methods, used for natural image enhancement. Despite their high
 accuracy, these methods often suffer from limitations such as artifact generation

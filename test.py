@@ -38,7 +38,7 @@ def test():
         psnrs.append(loss_psnr.item())
         val_losses.append(loss.mean().item())
         to_save = ((pred.squeeze(0)) * 255).to(torch.uint8)
-        torchvision.io.write_png(to_save.to('cpu'), BASE_DIR + 'experiments/' + val_set.files[idx])
+        torchvision.io.write_png(to_save.to('cpu'), BASE_DIR + 'method_results/' + val_set.files[idx])
     print('LPIPS', sum(val_losses) / len(val_losses))
     print('PSNR', sum(psnrs) / len(psnrs))
 

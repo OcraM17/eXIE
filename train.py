@@ -1,10 +1,8 @@
 import torchvision
 import torch
-import kornia
-import lpips
 from UNet import UNet32, UNet
-import sys
 import argparse
+import os
 from kornia.metrics import psnr
 from torch.utils.tensorboard import SummaryWriter
 from ptcolor import rgb2lab, deltaE94
@@ -17,7 +15,6 @@ def parse_args():
     a = parser.add_argument
     a("--exp_name", help="name of the experiment")
     a("--basedir", help="basedir")
-    a("-a", "--arch", help="architecture of the experiment")
     a("-s", "--size", type=int, default=32, help="image size")
     a("-e", "--epochs", type=int, default=600, help="Number of Epochs")
     a("-l", "--lr", type=float, default=1e-3, help="Learning Rate")

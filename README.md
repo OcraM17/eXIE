@@ -38,7 +38,72 @@ Once the dataset has been downloaded, split the data in training (4000)
 and test(1000) using the files train1+2-list.txt and test-list.txt
 
 ## Reproducing the Experiments
-Code will be released soon..
+### eXIE experiments
+In order to reproduce the experiments contained in our paper, you need to obtain the 
+1000 test images from the fivek dataset with one image enhancement method.
+Then, you need to run the eXIE algorithm on each image, using the corresponding
+enhancement method as the target model. The results will be saved in the 
+eXIE_results folder.
+
+This is the organization of the folders:
+
+``` 
+├── Basedir
+│   ├── raw
+│   │   ├── 0000.png
+│   │   ├── ...
+│   │   └── 4999.png
+│   ├── expC
+│   │   ├── 0000.png
+│   │   ├── ...
+│   │   └── 4999.png
+│   ├── method_results
+│   │   ├── XXXX.png
+│   │   ├── ...
+│   │   └── XXXX.png
+│   ├── eXIE_results
+│   ├── test-list.txt
+│   └── train1+2-list.txt
+```
+
+In order to execute the eXIE algorithm, you need to run the following command:
+
+```
+python3 eXIE.py --basedir <BASEDIR> --expname <EXPNAME> -m <method> -t <THRESHOLD> -s <STEPS>
+```
+  
+  where:
+  - BASEDIR is the path to the folder containing the raw images, the test-list.txt and the train1+2-list.txt files
+  - EXPNAME is the name of the experiment
+  - method is the name of the searching algorithm (Dijkstra, Best Greedy or eXIE)
+  - THRESHOLD is the threshold used to stop the searching algorithm
+  - STEPS is the number of nodes expanded by the searching algorithm
+
+### UNet experiments
+It is possible to generate the images with a simple I2I method based on UNet.
+In order to do that, you need to run the following command:
+
+```
+python3 train.py --exp_name <EXP_NAME>  --basedir <BASEDIR> -s <SIZE> -e <EPOCHS> -l <LR> -b <BS> -d <DO>
+```
+where:
+  - BASEDIR is the path to the folder containing the raw images, enhanced images from the expert C, the test-list.txt and the train1+2-list.txt files
+  - EXPNAME is the name of the experiment
+  - SIZE is the size of the images
+  - EPOCHS is the number of training epochs
+  - BS is the batch size
+  - DO is the dropout applied to the unet
+
+Once the model has been trained (the best model is saved in ``` ./ckt/best_' + args.exp_name + '.pt'```) the test images can be obtained with:
+
+```
+python3 test.py --exp_name <EXP_NAME>  -s <SIZE> 
+```
+
+The test images can be found in ```Method_results```.
+
+
+
 
 ## Results
 

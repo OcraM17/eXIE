@@ -8,8 +8,6 @@ import argparse
 from kornia.metrics import psnr
 from torch.utils.tensorboard import SummaryWriter
 from ptcolor import rgb2lab, deltaE94
-from enet import ENet
-from cresnet import CResnet
 import torchvision.transforms.functional as TF
 import random
 

@@ -1,13 +1,12 @@
 # Explaining Image Enhancement Black-Box Methods through a Path Planning Based Algorithm
 
-Official Repo of the paper "Explaining Image Enhancement Black-Box Methods through a Path Planning Based Algorithm". At the moment the paper is
-**under review**.
+Official Repo of the paper "Explaining Image Enhancement Black-Box Methods through a Path Planning Based Algorithm". 
 
 [Marco Cotogni](https://scholar.google.com/citations?user=8PUz5lAAAAAJ&hl=it) and [Claudio Cusano](https://scholar.google.com/citations?hl=it&user=lhZpU_8AAAAJ&view_op=list_works&sortby=pubdate)
 
-[![arxiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2207.07092.pdf)
+[![arxiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2207.07092.pdf) [![arxiv](https://img.shields.io/badge/MTAP-green)]() 
 
-**ACCEPTED** in Multimedia Tools and Applications
+**ACCEPTED in Multimedia Tools and Applications**
 
 eXIE is an algorithm for explaining the results of state-of-the-art image-to-image
 translation methods, used for natural image enhancement. Despite their high

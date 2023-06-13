@@ -4,9 +4,9 @@ Official Repo of the paper "Explaining Image Enhancement Black-Box Methods throu
 
 [Marco Cotogni](https://scholar.google.com/citations?user=8PUz5lAAAAAJ&hl=it) and [Claudio Cusano](https://scholar.google.com/citations?hl=it&user=lhZpU_8AAAAJ&view_op=list_works&sortby=pubdate)
 
-[![arxiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2207.07092.pdf) [![arxiv](https://img.shields.io/badge/MTAP-green)]() 
+[![arxiv](https://img.shields.io/badge/arXiv-red)](https://arxiv.org/pdf/2207.07092.pdf) [![arxiv](https://img.shields.io/badge/MTAP-green)](https://link.springer.com/content/pdf/10.1007/s11042-023-15648-8.pdf) 
 
-**ACCEPTED in Multimedia Tools and Applications**
+**PUBLISHED in Multimedia Tools and Applications**
 
 eXIE is an algorithm for explaining the results of state-of-the-art image-to-image
 translation methods, used for natural image enhancement. Despite their high
@@ -124,7 +124,7 @@ If you are considering using our code, or you want to cite our paper please use:
 @article{cotogni2022explaining,
   title={Explaining Image Enhancement Black-Box Methods through a Path Planning Based Algorithm},
   author={Cotogni, Marco and Cusano, Claudio},
-  journal={arXiv preprint arXiv:2207.07092},
-  year= {2022}
+  journal={Multimedia Tools and Applications},
+  year= {2023}
 }
 ```
